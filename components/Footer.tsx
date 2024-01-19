@@ -10,17 +10,17 @@ import Image from "next/image";
 import Link from "next/link";
 import { ImageLoader, StaticImport } from "next/dist/shared/lib/get-img-props";
 
-type Props = {
-  src:  string | StaticImport;
-  quality?: number;
-  width?: number;
-}
+// type Props = {
+//   src:  string | StaticImport;
+//   quality?: number;
+//   width?: number;
+// }
 
 
 
-const imageLoader = ({ src, width, quality }: Props ) => {
-  return `https://example.com/${src}?w=${width}&q=${quality || 75}`;
-};
+// const imageLoader = ({ src, width, quality }: Props ) => {
+//   return `https://example.com/${src}?w=${width}&q=${quality || 75}`;
+// };
 
 const Footer = () => {
   const [scrolling, setScrolling] = useState(false);
@@ -51,8 +51,7 @@ const Footer = () => {
             <ul className="flex gap-4">
               <li>
                 <Link href="https://www.facbook.com/ArinzeMeshach">
-                  <Image
-                    loader={imageLoader}
+                  <Image                  
                     src={Facebook}
                     className="w-5"
                     alt=""
@@ -65,7 +64,6 @@ const Footer = () => {
                 <Link href="https://www.linkedin.com/meshach-ekene">
                   <Image
                     src={LinkedIn}
-                    loader={imageLoader}
                     className="w-5"
                     alt=""
                     width={100}
@@ -75,8 +73,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link href="https://www.instgram.com/arinzmeshach">
-                  <Image
-                    loader={imageLoader}
+                  <Image              
                     src={Instagram}
                     className="w-5"
                     alt=""
