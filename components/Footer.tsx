@@ -51,8 +51,7 @@ const Footer = () => {
             <ul className="flex gap-4">
               <li>
                 <Link href="https://www.facbook.com/ArinzeMeshach">
-                  <Image
-                    
+                  <Image                  
                     src={Facebook}
                     className="w-5"
                     alt=""
@@ -65,7 +64,6 @@ const Footer = () => {
                 <Link href="https://www.linkedin.com/meshach-ekene">
                   <Image
                     src={LinkedIn}
-                    
                     className="w-5"
                     alt=""
                     width={100}
@@ -75,8 +73,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link href="https://www.instgram.com/arinzmeshach">
-                  <Image
-                    
+                  <Image              
                     src={Instagram}
                     className="w-5"
                     alt=""
